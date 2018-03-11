@@ -18,8 +18,22 @@ echo $sql->getList();
 //echo json_encode($busca);
 
 //Carrega um usuário usando o login e senha
+//$usuario = new Usuario();
+//$usuario->login("willian", "lol");
+//echo $usuario;
+
+//Inserindo um usuário
+//$aluno = new Usuario("aluno", "testando");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("willian", "lol");
+
+$usuario->loadbyId(5);
+
+$usuario->update("professor","!@#$%&*");
 
 echo $usuario;
+
+
 ?>
